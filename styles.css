@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  overflow: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #0c95d9, #07708d, #095276);
+}
+.main {
+  background-color: rgb(0, 208, 255);
+  width: 60%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: relative;
+}
+.current-score-card {
+  padding: 15px;
+  border-radius: 10px;
+}
+.player-1,
+.player-2 {
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.player-1-info,
+.player-2-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-left,
+.main-right {
+  padding: 20px;
+  height: 100%;
+  background-color: #73caf6;
+}
+
+.player-1-title,
+.player-2-title {
+  color: white;
+}
+.current-score-card {
+  padding: 1em 3em;
+  text-align: center;
+  background-color: rgb(34, 122, 217);
+  display: grid;
+  gap: 1em;
+}
+.current-score {
+  font-size: 2em;
+}
+.total-score {
+  color: white;
+  font-size: 4em;
+}
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: white;
+  padding: 12px 25px;
+  border-radius: 50rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.new-game-btn {
+  top: 6%;
+}
+.roll-dice-btn {
+  top: 62%;
+}
+.hold-btn {
+  top: 74%;
+}
+.dice-png {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: auto;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+  color: white;
+}
