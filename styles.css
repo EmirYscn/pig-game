@@ -87,7 +87,7 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .new-game-btn {
-  top: 6%;
+  top: 12%;
 }
 .roll-dice-btn {
   top: 62%;
@@ -112,4 +112,15 @@ body {
 }
 .won {
   background-color: rgba(0, 0, 0, 0.7);
+}
+.score-btn {
+  border-radius: 50%;
+  padding: 1em;
+  border: none;
+}
+.roll-dice-btn:active {
+  transform: translateX(10px);
+}
+.roll-dice-btn:hover {
+  opacity: 0.9;
 }

@@ -61,35 +61,9 @@ function getRandomNumber() {
 }
 function getDice() {
   showDice();
-  let randomNumber = getRandomNumber();
-  switch (randomNumber) {
-    case 1:
-      dice.src = `images/dice-${1}.png`;
-      return 1;
-      break;
-    case 2:
-      dice.src = `images/dice-${2}.png`;
-      return 2;
-      break;
-    case 3:
-      dice.src = `images/dice-${3}.png`;
-      return 3;
-      break;
-    case 4:
-      dice.src = `images/dice-${4}.png`;
-      return 4;
-      break;
-    case 5:
-      dice.src = `images/dice-${5}.png`;
-      return 5;
-      break;
-    case 6:
-      dice.src = `images/dice-${6}.png`;
-      return 6;
-      break;
-    default:
-      break;
-  }
+  const randomDice = getRandomNumber();
+  dice.src = `images/dice-${randomDice}.png`;
+  return randomDice;
 }
 function rollDice() {
   let toAdd = getDice();
@@ -182,5 +156,6 @@ newGameBtn.addEventListener("click", () => {
   holdBtn.addEventListener("click", holdDice);
 
   hideDice();
+  setActivePlayer("player1");
 });
 setActivePlayer("player1");
