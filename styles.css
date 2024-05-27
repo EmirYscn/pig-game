@@ -118,9 +118,7 @@ body {
   padding: 1em;
   border: none;
 }
-.roll-dice-btn:active {
-  transform: translateX(10px);
-}
+
 .roll-dice-btn:hover {
   opacity: 0.9;
 }
